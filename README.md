@@ -94,7 +94,7 @@ used are:
 * CM
 * CM_VERSION
 * HEADLESS
-* \<iso_path\>
+* ISO_PATH
 * UPDATE
 
 `Makefile.local` is most commonly used to override the default configuration
@@ -142,6 +142,19 @@ The variable `INSTALL_VAGRANT_KEY` can be set to turn off installation
 of the default insecure vagrant key when the image is being used
 outside of vagrant.  Set `INSTALL_VAGRANT_KEY := false`, the default
 is true.
+
+An example configuration of all the above would be:
+
+    # Makefile.local
+    CM := puppet
+    CM_VERSION := 3.8.1
+    ISO_PATH := iso
+    PACKER := /usr/local/bin/packer
+    SSH_USERNAME := puppet
+    SSH_PASSWORD := puppet
+    INSTALL_VAGRANT_KEY : false
+    HEADLESS := true
+    UPDATE := true
 
 ## Contributing
 
