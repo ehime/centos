@@ -152,7 +152,7 @@ An example configuration of all the above would be:
     PACKER := /usr/local/bin/packer
     SSH_USERNAME := puppet
     SSH_PASSWORD := puppet
-    INSTALL_VAGRANT_KEY : false
+    INSTALL_VAGRANT_KEY := false
     HEADLESS := true
     UPDATE := true
 
